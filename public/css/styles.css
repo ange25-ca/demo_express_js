@@ -62,7 +62,7 @@ i {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 5% 20% 0 20%;
 }
 
@@ -72,7 +72,7 @@ h1 {
 }
 
 .centered-index-content {
-  max-width: 800px;
+  max-width: 500px;
   margin: 5% 10% 0 10%;
 }
 
