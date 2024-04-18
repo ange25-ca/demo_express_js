@@ -5,7 +5,7 @@ const productosController = require('../controllers/productosController');
 // Ruta para buscar productos
 router.get('/', (req, res) => {
     const query = req.query.q.toLowerCase();
-    const productos = productosController.getProductos();
+    const productos = productosController.obtenerTodos();
     const productosFiltrados = productos.filter(producto =>
         producto.nombre.toLowerCase().includes(query) || producto.descripcion.toLowerCase().includes(query)
     );

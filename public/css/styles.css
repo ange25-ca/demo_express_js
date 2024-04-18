@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 .material-symbols-rounded {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-.noto-sans-Noto style {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
+.noto-sans-Comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
   font-style: normal;
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #F0F3FF;
@@ -20,7 +20,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #8E7AB5;
+  background-color: #0e0d0f;
   padding: 5px 0;
   text-align: center;
 }
@@ -44,7 +44,7 @@ nav ul li a {
   transition: background-color 0.3s;
 }
 nav ul li a:hover {
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
 }
 
 i {
@@ -54,7 +54,7 @@ i {
 .badge {
   position: relative;
   top: -2px;
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
   color: white;
   border-radius: 50%;
   padding: 5px 8px;
@@ -62,13 +62,13 @@ i {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 5% 20% 0 20%;
 }
 
 h1 {
   text-align: center;
-  color: #E493B3;
+  color: rgba(7, 7, 7, 0.7921568627);
 }
 
 .centered-index-content {
@@ -79,7 +79,7 @@ h1 {
 .login-container {
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   position: absolute;
@@ -90,7 +90,7 @@ h1 {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -108,12 +108,12 @@ h1 {
 }
 .form-group button {
   color: white;
-  background-color: #8E7AB5;
+  background-color: #0e0d0f;
   border-radius: 20px;
   align-self: center;
 }
 .form-group button:hover {
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
 }
 
 #mostrarContrasena {
@@ -130,15 +130,15 @@ h1 {
   width: 100%;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #8E7AB5;
+  border: 1px solid #0e0d0f;
   border-radius: 20px;
   align-self: center;
 }
 .form-input input:hover, .form-input input:focus, .form-input input:active, .form-input input:focus-visible {
-  border: 1px solid #EEA5A6;
+  border: 1px solid #3b3b3b;
   outline-width: 1px;
   outline-style: solid;
-  outline-color: #EEA5A6;
+  outline-color: #3b3b3b;
 }
 
 .show-password-label {
@@ -148,7 +148,7 @@ h1 {
 .submit-button {
   padding: 10px;
   font-size: 16px;
-  background-color: #8E7AB5;
+  background-color: #0e0d0f;
   color: white;
   border: none;
   border-radius: 20px;
@@ -157,7 +157,7 @@ h1 {
   width: 100%;
 }
 .submit-button:hover {
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
 }
 
 .register-link {
@@ -211,14 +211,14 @@ table td {
 .action-buttons button {
   padding: 5px 10px;
   margin-right: 5px;
-  background-color: #8E7AB5;
+  background-color: #0e0d0f;
   color: white;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 .action-buttons button:hover {
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
 }
 .action-buttons span {
   margin: 0 5px;
@@ -244,7 +244,7 @@ table td {
 }
 
 p {
-  color: #986D8E;
+  color: #322c31;
 }
 
 p.empty-cart {
@@ -263,19 +263,19 @@ p.empty-cart {
   flex: 1;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #8E7AB5;
+  border: 1px solid #0e0d0f;
   border-radius: 20px;
 }
 .search-bar input:hover, .search-bar input:focus, .search-bar input:active, .search-bar input:focus-visible {
-  border: 1px solid #EEA5A6;
+  border: 1px solid #3b3b3b;
   outline-width: 1px;
   outline-style: solid;
-  outline-color: #EEA5A6;
+  outline-color: #3b3b3b;
 }
 .search-bar button {
   padding: 8px 15px;
   margin-left: 10px;
-  background-color: #8E7AB5;
+  background-color: #0e0d0f;
   color: white;
   border: none;
   border-radius: 20px;
@@ -283,17 +283,17 @@ p.empty-cart {
   transition: background-color 0.3s;
 }
 .search-bar button:hover {
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
 }
 
 .producto-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
 }
 
 .producto {
-  border: 1px solid #8E7AB5;
+  border: 1px solid #0e0d0f;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
@@ -307,21 +307,21 @@ p.empty-cart {
 .producto h2 {
   font-size: 1.5rem;
   margin-bottom: 5px;
-  color: #E493B3;
+  color: rgba(7, 7, 7, 0.7921568627);
 }
 .producto p {
   margin-bottom: 10px;
 }
 .producto button {
   padding: 8px 15px;
-  background-color: #8E7AB5;
+  background-color: #0e0d0f;
   color: white;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 .producto button:hover {
-  background-color: #EEA5A6;
+  background-color: #3b3b3b;
 }
 
 .button-container {

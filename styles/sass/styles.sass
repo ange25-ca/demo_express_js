@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+//@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap')
 
-$uniquifier: 'Noto style'
-$weight: 400
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap')
+
+
+$uniquifier: 'Comfortaa'
+$weight: 300
 
 $mainColor: #F0F3FF
-$navColor: #8E7AB5
-$textColor: #986D8E
-$titleColor: #E493B3
-$hoverColor: #EEA5A6
+$navColor: #0e0d0f
+$textColor: #322c31
+$titleColor: #070707ca
+$hoverColor: #3b3b3b
 
 $border-radius: 20px
 
@@ -15,12 +18,12 @@ $border-radius: 20px
   font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24
 
 .noto-sans-#{$uniquifier}
-  font-family: "Noto Sans", sans-serif
+  font-family:  "Comfortaa", sans-serif
   font-weight: $weight
   font-style: normal
 
 body
-  font-family: "Noto Sans", sans-serif
+  font-family:  "Comfortaa", sans-serif
   margin: 0
   padding: 0
   background-color: $mainColor
@@ -67,7 +70,7 @@ i
   font-size: 12px
 
 .container
-  max-width: 800px
+  max-width: 900px
   margin: 5% 20% 0 20%
 
 h1
@@ -82,7 +85,7 @@ h1
 .login-container
   max-width: 400px
   margin: 0 auto
-  padding: 20px
+  padding: 15px
   border: 1px solid #ccc
   border-radius: 5px
   position: absolute
@@ -92,7 +95,7 @@ h1
   width: 90%
 
 .title
-  font-size: 24px
+  font-size: 20px
   text-align: center
   //margin-bottom: 20px
 
@@ -273,8 +276,8 @@ p.empty-cart
 
 .producto-container
   display: grid
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
-  gap: 20px
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr))
+  gap: 15px
 
 .producto
   border: 1px solid $navColor

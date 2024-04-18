@@ -2,17 +2,17 @@
 const productoModel = require('../models/productoModel');
 
 
-function getProductos() {
-  const productos = productoModel.obtenerTodos();
+async function obtenerTodos() {
+  const productos = await productoModel.obtenerTodos();
   return productos;
 }
 
-function getProductoPorId(id) {
-  const producto = productoModel.obtenerPorId(id);
+async function obtenerPorId(id) {
+  const producto = await productoModel.obtenerPorId(id);
   return producto;
 }
 
 module.exports = {
-  getProductos,
-  getProductoPorId
+  obtenerTodos,
+  obtenerPorId
 };

@@ -3,9 +3,9 @@ const router = express.Router();
 const productosController = require('../controllers/productosController');
 
 // Ruta para agregar un producto al carrito
-router.post('/:id', (req, res) => {
+router.post('/:id', async (req, res) => {
     const idProducto = req.params.id;
-    const producto = productosController.getProductoPorId(idProducto);
+    const producto = await productosController.obtenerPorId(idProducto);
     if (producto && producto.cantidad > 0) {
         let carrito = req.session.carrito || [];
         let productoEnCarrito = carrito.find(item => item.id === idProducto);
@@ -20,6 +20,6 @@ router.post('/:id', (req, res) => {
     } else {
         res.status(404).send('Producto no encontrado o no disponible');
     }
-  });  
+  });
 
 module.exports = router;

@@ -3,12 +3,12 @@ const router = express.Router();
 const productosController = require('../controllers/productosController');
 
 // Ruta para actualizar la cantidad de un producto en el carrito
-router.post('/:id/:cantidad', (req, res) => {
+router.post('/:id/:cantidad', async(req, res) => {
     const idProducto = req.params.id;
     const cantidad = parseInt(req.params.cantidad);
     let carrito = req.session.carrito || [];
     const item = carrito.find(item => item.id === idProducto);
-    const producto = productosController.getProductoPorId(idProducto);
+    const producto = await productosController.obtenerPorId(idProducto);
     if (item) {
         const cantidadNueva = item.cantidad + cantidad;
         if (cantidadNueva > 0 && cantidad <= producto.cantidad) {

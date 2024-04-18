@@ -65,10 +65,48 @@ async function getUserById(id) {
     });
 }
 
-connection.end();
+//Funcion para optener todos los productos de la base de datos 
+async function obtenerTodos(){
+    return new Promise ((resolve, reject) => {
+        connection.query('SELECT * FROM productos',
+            (err, results) => {
+                if (err) {
+                    console.error('Error al obtener los productos:', err.message);
+                    reject(err);
+                } else {
+                   resolve(results);
+                }
+            });
+          
+    });
+}
+
+//Funcion para obtener un producto por su ID
+async function obtenerPorId(id){
+    return new Promise ((resolve, reject) => {
+        connection.query(
+            'SELECT * FROM productos WHERE id = ?',
+            [id],
+            (err, results) => {
+                if (err) {
+                    console.error('Error al obtener los productos por id', err.message);
+                    reject(err);
+                } else {
+                
+                        resolve(results[0]);
+                  console.log(resolve);
+                }
+            });
+           
+    });
+}
+
+//connection.end();
 
 module.exports = {
     registrarUsuario,
     obtenerUsuarioPorNombre,
-    getUserById
+    getUserById,
+    obtenerTodos,
+    obtenerPorId
 };
