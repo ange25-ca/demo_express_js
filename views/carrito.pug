@@ -14,7 +14,9 @@ block content
             tbody
                 each item in carrito
                     tr
-                        td= item.nombre
+                        td
+                            // Muestra las imagenes del producto
+                            img(src=`${item.imagen}`, alt='Descripción de la imagen', class='img-carrito')
                         td
                             .action-buttons
                                 form(action=`/actualizar-cantidad/${item.id}/-1`, method='POST')

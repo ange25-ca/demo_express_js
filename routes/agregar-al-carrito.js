@@ -12,10 +12,10 @@ router.post('/:id', async (req, res) => {
         if (productoEnCarrito) {
             productoEnCarrito.cantidad++;
         } else {
-            carrito.push({ id: idProducto, nombre: producto.nombre, precio: producto.precio, cantidad: 1 });
+            carrito.push({ id: idProducto, imagen: producto.imagen, nombre: producto.nombre, precio: producto.precio, cantidad: 1 });
         }
         producto.cantidad--;
-        req.session.carrito = carrito;
+        req.session.carrito = carrito; //Actualiza el carrito con la sesion iniciada
         res.redirect('/catalogo');
     } else {
         res.status(404).send('Producto no encontrado o no disponible');

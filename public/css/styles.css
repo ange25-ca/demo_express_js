@@ -380,6 +380,14 @@ p.empty-cart {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 20px;
+  /*Estilos para la imagen en la tabla de carritos*/
+}
+
+.img-carrito {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
 
 @media only screen and (max-width: 600px) {

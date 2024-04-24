@@ -8,4 +8,5 @@ router.get('/', authMiddleware.authenticate, (req, res) => {
     res.render('carrito', { title: 'Carrito de Compra', carrito });
 });
 
+
 module.exports = router;

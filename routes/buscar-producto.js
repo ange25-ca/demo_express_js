@@ -3,9 +3,9 @@ const router = express.Router();
 const productosController = require('../controllers/productosController');
 
 // Ruta para buscar productos
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     const query = req.query.q.toLowerCase();
-    const productos = productosController.obtenerTodos();
+    const productos = await productosController.obtenerTodos();
     const productosFiltrados = productos.filter(producto =>
         producto.nombre.toLowerCase().includes(query) || producto.descripcion.toLowerCase().includes(query)
     );

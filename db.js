@@ -77,7 +77,7 @@ async function obtenerTodos(){
                    resolve(results);
                 }
             });
-          
+       // db.end();  //Cierra la conexión de la base de datos
     });
 }
 
@@ -97,7 +97,7 @@ async function obtenerPorId(id){
                   console.log(resolve);
                 }
             });
-           
+       // db.end(); //cierra la conexión con la base de datos.
     });
 }
 
